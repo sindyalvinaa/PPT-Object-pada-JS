@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.8"> <title>React Uncover</title>
+</head> <body>
+
+<h1>Belajar JavaScript (ES6)</h1> 
+<script>
+    let mahasiswa = {
+    nama: "Eka", 
+    umur: 19,
+    jurusan: "Teknik Informatika",
+    getInfo() {
+    return '$(this.nama) ($(this.umur) tahun) dari jurusan $(this.jurusan)';
+    }
+}
+
+console.log( mahasiswa ); 
+// [nama: "Eka", umur: "19", Jurusan: "Teknik Informatika", gatinfo: f)
+
+mahasiswa.umur = 20;
+mahasiswa.tempatLahir = "Jakarta";
+
+console.log( mahasiswa );
+// (nama: "Eka", umur: 20, Jurusan: "Teknik Informatika", tempatLahir: "Jakarta", getInfo: f} 
+</script> 
+</html>
+</body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.8"> 
+<title>React Uncover</title>
+</head> <body>
+
+<h1>Belajar JavaScript (ES6)</h1> 
+<script>
+   const getUser = () => {
+    return new Promise((resolve, reject) => {
+    setTimeout(() => {
+    //resolve ("Rudi"); 
+    reject("Something wrong...");
+   }, 2000)
+   })
+}
+
+   const trygGetName = async () => {
+    let userName = await getUser();
+    console.log(userName);
+   };
+
+   console.log("Start...");
+   tryGetName();
+   console.log("Finish")
+
+</script> 
+</html>
+</body>
